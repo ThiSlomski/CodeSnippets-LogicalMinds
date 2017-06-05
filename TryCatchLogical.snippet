@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+<CodeSnippet Format="1.0.0">
+<Header>
+<Title>tryCathLogical</Title>
+<Shortcut>tryCathLogical</Shortcut>
+<Description>Código para o Bloco Try/Catch da Logical Minds</Description>
+<Author>Thiago Slomski</Author>
+<SnippetTypes>
+<SnippetType>Expansion</SnippetType>
+<SnippetType>SurroundsWith</SnippetType>
+</SnippetTypes>
+</Header>
+<Snippet>
+<Declarations>
+</Declarations>
+<Code Language="csharp">
+<![CDATA[try
+         {
+           //Executa a ação
+         }
+         catch (Exception ex)
+         {
+           var dic = new Dictionary<string, string>();
+           dic.Add("","");
+           throw new Excecao(ex, dic);
+         }
+]]>
+</Code>
+</Snippet>
+</CodeSnippet>
+</CodeSnippets>
